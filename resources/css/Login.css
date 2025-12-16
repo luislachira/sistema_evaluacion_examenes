@@ -1,0 +1,297 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Color de fondo como fallback si la imagen no carga */
+    background-color: #0e1e40;
+    /* Usar ruta relativa que Vite puede procesar correctamente */
+    background-image: url('../js/assets/Fondo_login.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.login-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(14, 30, 64, 0.7);
+}
+
+.login-box {
+    position: relative;
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    z-index: 1;
+}
+
+.login-header {
+    margin-bottom: 2rem;
+}
+
+.login-header img {
+    max-width: 70px;
+    margin-bottom: 0.5rem;
+}
+
+.login-header h2 {
+    font-size: 1rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+    font-weight: 500;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #000;
+    border-radius: 4px;
+    font-size: 1rem;
+    background: #fff;
+    color: #000;
+}
+
+.input-group input::placeholder {
+    color: #666;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 0.85rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #f7b731;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.btn-primary:hover {
+    background-color: #e6a825;
+}
+
+.btn-secondary {
+    background-color: #d9534f;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.btn-secondary:hover {
+    background-color: #c9302c;
+}
+
+/* Estilos para los botones OAuth */
+.oauth-section {
+    margin-top: 1rem;
+}
+
+.oauth-divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.oauth-divider::before,
+.oauth-divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.oauth-divider span {
+    padding: 0 1rem;
+    color: #6b7280;
+    font-size: 0.875rem;
+}
+
+.oauth-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.oauth-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.2s;
+    border: 1px solid #e5e7eb;
+    background: #fff;
+    color: #374151;
+    cursor: pointer;
+}
+
+.oauth-btn:hover {
+    background: #f9fafb;
+}
+
+.oauth-btn.microsoft {
+    border-color: #1f1f1f;
+    background: #1f1f1f;
+    color: white;
+}
+
+.oauth-btn.microsoft:hover {
+    background: #000;
+}
+
+.oauth-logo {
+    width: 18px;
+    height: 18px;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.error-message {
+    color: #d9534f;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+}
+
+/* Estilos para enlaces como botones */
+.btn-secondary-link {
+    width: 100%;
+    padding: 0.85rem;
+    background-color: #6c757d;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+    box-sizing: border-box;
+}
+
+.btn-secondary-link:hover {
+    background-color: #5a6268;
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilos para forgot password */
+.forgot-password-content {
+    text-align: center;
+}
+
+.forgot-password-content h3 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.forgot-password-content p {
+    color: #666;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+/* Estilos para mensajes de éxito */
+.success-message-container {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.success-icon {
+    font-size: 3rem;
+    color: #28a745;
+    margin-bottom: 1rem;
+}
+
+.success-message-container h3 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.success-message {
+    color: #28a745;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Estilos para errores por campo */
+.field-error {
+    color: #d9534f;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+/* Estilo para campos de solo lectura */
+.readonly-input {
+    background-color: #f8f9fa !important;
+    color: #6c757d !important;
+    cursor: not-allowed;
+}
+
+/* Mejoras para form-options */
+.form-options {
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.btn-link {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.btn-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Spinner para OAuth callback */
+.spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
