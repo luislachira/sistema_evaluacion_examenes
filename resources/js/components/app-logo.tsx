@@ -11,7 +11,7 @@ declare global {
 
 export default function AppLogo() {
     // Obtener el nombre de la app desde Laravel o usar un valor por defecto
-    const appName = window.Laravel?.appName || 'I.E. Leonor Cerna de Valdiviezo';
+    const appName = window.Laravel?.appName || 'Sistema de Evaluación de Exámenes';
 
     return (
         <>

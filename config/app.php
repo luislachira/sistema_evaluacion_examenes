@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'I.E. Leonor Cerna de Valdiviezo'),
+    'name' => env('APP_NAME', 'Sistema de Evaluación de Exámenes'),
 
     /*
     |--------------------------------------------------------------------------

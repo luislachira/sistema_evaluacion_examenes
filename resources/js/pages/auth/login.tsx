@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
 import '@css/Login.css';
-import logo from '@img/logo_leonor_cerna 2.png';
+// import logo from '@img/logo.png';
 import { useAuth } from '../../hooks/useAuth';
 
 // --- Interfaces y Tipos ---
@@ -72,8 +72,10 @@ const Login: React.FC = () => {
         <div className="login-container">
             <div className="login-box">
                 <div className="login-header">
-                    <img src={logo} alt="Logo I.E. Leonor Cerna de Valdiviezo" />
-                    <h2>I.E. LEONOR CERNA DE VALDIVIEZO</h2>
+                    <h2>LOGO</h2>{/* <img src={logo} alt="Logo I.E." /> */}
+                    <br />
+                    {/* Espacio reservado para tu logo / Reserved space for your logo */}
+                    <h2>"NOMBRE DE LA INSTITUCIÓN"</h2>
                 </div>
                 <form className="login-form" onSubmit={handleSubmit}>
                     <div className="input-group">

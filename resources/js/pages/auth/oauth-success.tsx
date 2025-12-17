@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { authStore, UsuarioDTO } from '../../store/authStore';
 import '@css/Login.css';
-import logo from '@/assets/logo_leonor_cerna 2.png';
+//import logo from '@/assets/logo.png';
 
 const OAuthCallback: React.FC = () => {
     const [searchParams] = useSearchParams();
@@ -93,8 +93,8 @@ const OAuthCallback: React.FC = () => {
             <div className="login-container">
                 <div className="login-box" style={{ textAlign: 'center' }}>
                     <div className="login-header">
-                        <img src={logo} alt="Logo I.E. Leonor Cerna de Valdiviezo" />
-                        <h2>I.E. LEONOR CERNA DE VALDIVIEZO</h2>
+                        <h2>LOGO</h2>{/* <img src={logo} alt="Logo I.E." /> */}
+                        <h2>"NOMBRE DE LA INSTITUCIÓN"</h2>
                     </div>
                     <div style={{
                         padding: '2rem 1rem',

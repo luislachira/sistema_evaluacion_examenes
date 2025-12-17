@@ -1,6 +1,6 @@
 # 📚 Sistema de Gestión de Exámenes
 
-Sistema web completo para la gestión y administración de exámenes de ascenso para docentes, desarrollado con Laravel 12 y React 19.
+Sistema web completo para la gestión y administración de exámenes de ascenso para docentes, desarrollado con Laravel 12 y React 19.2.
 
 ## ✨ Características Principales
 
@@ -50,7 +50,7 @@ Sistema web completo para la gestión y administración de exámenes de ascenso 
 
 ### Frontend
 
-- **React 19** - Biblioteca de UI
+- **React 19.2** - Biblioteca de UI
 - **TypeScript** - Tipado estático
 - **React Router DOM** - Enrutamiento
 - **Axios** - Cliente HTTP

@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink, useLocation } from 'react-router-dom'; // <-- Usamos NavLink para la navegación
 import '@css/Sidebar.css';
-import logo from '@img/logo_leonor_cerna 2.png';
+// import logo from '@img/logo.png';
 import { FaTachometerAlt, FaUsers, FaBook, FaClipboardList, FaChartBar, FaCogs, FaSignOutAlt } from 'react-icons/fa';
 import { useAuth } from '../../hooks/useAuth';
 
@@ -47,8 +47,9 @@ const Sidebar: React.FC<SidebarProps> = ({ user }) => {
     return (
         <aside className="sidebar">
             <div className="sidebar-header">
-                <img src={logo} alt="Logo" className="sidebar-logo" />
-                <span>LEONOR CERNA DE VALDIVIEZO</span>
+                {/* <img src={logo} alt="Logo" className="sidebar-logo" /> */}
+                {/* Espacio reservado para tu logo / Reserved space for your logo */}
+                <h2>"NOMBRE DE LA INSTITUCIÓN"</h2>
             </div>
             <nav className="sidebar-nav">
                 {links.map((link) => {

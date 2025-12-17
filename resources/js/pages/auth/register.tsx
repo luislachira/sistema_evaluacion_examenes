@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import '@css/Login.css';
-import logo from '@/assets/logo_leonor_cerna 2.png';
+//import logo from '@/assets/logo.png';
 import { useAuth } from '../../hooks/useAuth';
 import { RegisterData } from '../../store/authStore';
 
@@ -48,8 +48,8 @@ const Register: React.FC = () => {
             <div className="login-container">
                 <div className="login-box" style={{ textAlign: 'center' }}>
                     <div className="login-header">
-                        <img src={logo} alt="Logo I.E. Leonor Cerna de Valdiviezo" />
-                        <h2>I.E. LEONOR CERNA DE VALDIVIEZO</h2>
+                        <h2>LOGO</h2>{/* <img src={logo} alt="Logo I.E." /> */}
+                        <h2>"NOMBRE DE LA INSTITUCIÓN"</h2>
                     </div>
                     <div style={{
                         padding: '2rem 1rem',
@@ -106,8 +106,8 @@ const Register: React.FC = () => {
         <div className="login-container">
             <div className="login-box">
                 <div className="login-header">
-                    <img src={logo} alt="Logo I.E. Leonor Cerna de Valdiviezo" />
-                    <h2>I.E. LEONOR CERNA DE VALDIVIEZO</h2>
+                    <h2>LOGO</h2>{/* <img src={logo} alt="Logo I.E." /> */}
+                        <h2>"NOMBRE DE LA INSTITUCIÓN"</h2>
                 </div>
                 <form className="login-form" onSubmit={onSubmit}>
                     <div className="input-group">

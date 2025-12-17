@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
     <footer className="footer">
       <div className="footer-content">
         <p className="footer-text">
-          © {currentYear} I.E. Leonor Cerna de Valdiviezo. Todos los derechos reservados.
+          © {currentYear} " ". Todos los derechos reservados.
         </p>
       </div>
     </footer>

@@ -48,11 +48,11 @@ class ResetPasswordNotification extends Notification
         $emailContent .= "Este enlace expirará en 60 minutos.\n\n";
         $emailContent .= "Si no solicitaste restablecer tu contraseña, ignora este mensaje.\n\n";
         $emailContent .= "Saludos,\n";
-        $emailContent .= "I.E. Leonor Cerna de Valdiviezo";
+        $emailContent .= config('app.name');
 
         Mail::raw($emailContent, function ($message) use ($notifiable) {
             $message->to($notifiable->correo)
-                    ->subject('Restablecer Contraseña - I.E. Leonor Cerna de Valdiviezo')
+                    ->subject('Restablecer Contraseña - ' . config('app.name'))
                     ->from(config('mail.from.address'), config('mail.from.name'));
         });
 

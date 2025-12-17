@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '@css/Login.css';
-import logo from '@/assets/logo_leonor_cerna 2.png';
+//import logo from '@/assets/logo.png';
 
 interface ApiError {
     response?: {
@@ -61,8 +61,8 @@ const ForgotPassword: React.FC = () => {
             <div className="login-container">
                 <div className="login-box">
                     <div className="login-header">
-                        <img src={logo} alt="Logo I.E. Leonor Cerna de Valdiviezo" />
-                        <h2>I.E. LEONOR CERNA DE VALDIVIEZO</h2>
+                        <h2>LOGO</h2>{/* <img src={logo} alt="Logo I.E." /> */}
+                        <h2>"NOMBRE DE LA INSTITUCIÓN"</h2>
                     </div>
                     <div className="success-message-container">
                         <div className="success-icon">✉️</div>
@@ -81,8 +81,8 @@ const ForgotPassword: React.FC = () => {
         <div className="login-container">
             <div className="login-box">
                 <div className="login-header">
-                    <img src={logo} alt="Logo I.E. Leonor Cerna de Valdiviezo" />
-                    <h2>I.E. LEONOR CERNA DE VALDIVIEZO</h2>
+                    { /* <img src={logo} alt="Logo I.E." /> */}
+                    <h2>"NOMBRE DE LA INSTITUCIÓN"</h2>
                 </div>
                 <div className="forgot-password-content">
                     <h3>Recuperar Contraseña</h3>
