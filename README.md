@@ -1,4 +1,4 @@
-# 📚 Sistema de Exámenes de Ascenso - I.E. Leonor Cerna de Valdiviezo
+# 📚 Sistema de Gestión de Exámenes
 
 Sistema web completo para la gestión y administración de exámenes de ascenso para docentes, desarrollado con Laravel 12 y React 19.
 
@@ -115,7 +115,7 @@ php artisan key:generate
 Editar `.env` con tus configuraciones:
 
 ```env
-APP_NAME="Examen de Ascenso"
+APP_NAME="Sistema de examenes"
 APP_URL=http://localhost
 APP_ENV=local
 APP_DEBUG=true
@@ -123,7 +123,7 @@ APP_DEBUG=true
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=examen_ascenso
+DB_DATABASE=sistema_examenes
 DB_USERNAME=tu_usuario
 DB_PASSWORD=tu_contraseña
 
@@ -234,7 +234,7 @@ php artisan route:list
 
 **Administrador por defecto:**
 
-- **Usuario**: `admin@leonorcerna.edu.pe`
+- **Usuario**: `admin@institucion.edu.pe`
 - **Contraseña**: `admin54321`
 
 > ⚠️ **Importante**: Se recomienda cambiar la contraseña del administrador después de la primera instalación usando el comando `php artisan admin:change-password`
@@ -351,8 +351,6 @@ php artisan test
 php artisan test --coverage
 ```
 
-**Importante**: Los tests usan una base de datos separada (`examen_ascenso_test`) y están protegidos para no ejecutarse en la base de datos de producción. Ver `docs/CONFIGURACION_TESTS_BD.md` para más detalles.
-
 ## 🔒 Seguridad
 
 - ✅ Autenticación con tokens JWT (Laravel Passport)
@@ -373,12 +371,12 @@ php artisan test --coverage
 
 ## 📝 Licencia
 
-Este proyecto es propiedad de la **I.E. Leonor Cerna de Valdiviezo**.
+Es de codigo abierto y gratuito.
 
 ## 👥 Desarrollo
 
 **Sistema desarrollado para:**  
-Institucion Educativa Leonor Cerna de Valdiviezo
+Instituciones Educativas.
 
 **Versión:** 1.0.0  
 **Última actualización:** 2025
