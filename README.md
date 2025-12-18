@@ -12,15 +12,22 @@ Sistema web completo para la gestión y administración de exámenes de ascenso 
 - **Gestión de sesiones** con cierre automático por inactividad (10 minutos)
 - **Sistema de roles**: Administrador y Docente
 
+  <img width="1898" height="931" alt="imagen" src="https://github.com/user-attachments/assets/c35db0c9-0120-4528-9e7a-d3ffe0365268" />
+
 ### 👨‍💼 Panel de Administración
 
 - **Gestión de exámenes**: Crear, editar, visualizar y eliminar exámenes
+
+  
+  
 - **Wizard de creación**: Proceso paso a paso para configurar exámenes
 - **Gestión de usuarios**: CRUD completo de usuarios, suspensión y activación
 - **Banco de preguntas**: Gestión de categorías, contextos y preguntas
 - **Resultados**: Visualización detallada de resultados de exámenes
 - **Subpruebas y postulaciones**: Configuración avanzada de exámenes
 - **Reglas de puntaje**: Sistema flexible de calificación
+
+  
 
 ### 👨‍🏫 Panel de Docente
 
