@@ -13,6 +13,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Carbon\Carbon;
+use Illuminate\Support\Facades\Cache;
 
 class PreguntaController extends Controller
 {
@@ -760,6 +761,9 @@ class PreguntaController extends Controller
             }
 
             DB::commit();
+
+            // Limpiar caché de categorías para que aparezcan las nuevas categorías creadas
+            Cache::forget('admin_categorias_list');
 
             return response()->json([
                 'message' => "Importación completada",
