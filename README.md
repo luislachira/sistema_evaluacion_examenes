@@ -14,15 +14,26 @@ Sistema web completo para la gestión y administración de exámenes de ascenso 
 
   <img width="1898" height="931" alt="imagen" src="https://github.com/user-attachments/assets/c35db0c9-0120-4528-9e7a-d3ffe0365268" />
 
+  <img width="1531" height="284" alt="imagen" src="https://github.com/user-attachments/assets/8bbd688d-1bb9-4e28-bc4e-658889eaf2fa" />
+
 ### 👨‍💼 Panel de Administración
 
 - **Gestión de exámenes**: Crear, editar, visualizar y eliminar exámenes
-
-  
-  
 - **Wizard de creación**: Proceso paso a paso para configurar exámenes
 - **Gestión de usuarios**: CRUD completo de usuarios, suspensión y activación
+
+  <img width="1902" height="931" alt="imagen" src="https://github.com/user-attachments/assets/e30f0485-085d-4013-ab93-517cb1e72b1e" />
+
+  <img width="1905" height="934" alt="imagen" src="https://github.com/user-attachments/assets/cb68cb06-5c24-4feb-9dea-5bdbcb41ab10" />
+  
 - **Banco de preguntas**: Gestión de categorías, contextos y preguntas
+
+  <img width="883" height="649" alt="imagen" src="https://github.com/user-attachments/assets/74c5d23b-e7c8-48b4-9fe1-4b2696776c2c" />
+
+  <img width="1013" height="835" alt="imagen" src="https://github.com/user-attachments/assets/071d0667-c22d-4b26-a628-ad74886cf08b" />
+
+  <img width="1899" height="932" alt="imagen" src="https://github.com/user-attachments/assets/f5dacbdd-167d-4ea4-b2f8-12095024335d" />
+  
 - **Resultados**: Visualización detallada de resultados de exámenes
 - **Subpruebas y postulaciones**: Configuración avanzada de exámenes
 - **Reglas de puntaje**: Sistema flexible de calificación
