@@ -18,8 +18,11 @@ class UsuarioController extends Controller
      */
     public function index(Request $request)
     {
-        // Construir clave de caché basada en los parámetros de búsqueda
-        $cacheKey = 'admin_usuarios_' . md5(json_encode([
+        // Obtener versión del cache de usuarios
+        $cacheVersion = Cache::get('admin_usuarios_version', 0);
+
+        // Construir clave de caché basada en los parámetros de búsqueda y la versión
+        $cacheKey = 'admin_usuarios_' . $cacheVersion . '_' . md5(json_encode([
             'estado' => $request->get('estado', 'todos'),
             'rol' => $request->get('rol', 'todos'),
             'search' => $request->get('search', ''),
@@ -259,6 +262,9 @@ class UsuarioController extends Controller
      */
     private function limpiarCacheUsuarios()
     {
+        // Actualizar versión del cache para invalidar todas las listas
+        Cache::put('admin_usuarios_version', time());
+
         // Limpiar caché de estadísticas del dashboard
         Cache::forget('admin_dashboard_estadisticas');
 
