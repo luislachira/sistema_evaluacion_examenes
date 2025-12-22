@@ -2,6 +2,8 @@
 
 Sistema web completo para la gestión y administración de exámenes de ascenso para docentes, desarrollado con Laravel 12 y React 19.2.
 
+<img width="1905" height="918" alt="imagen" src="https://github.com/user-attachments/assets/4c40a42a-a775-47f8-8111-7851d6509d14" />
+
 ## ✨ Características Principales
 
 ### 🔐 Autenticación
